@@ -26,30 +26,30 @@
     <fragment
         android:id="@+id/nav_cita"
         android:name="com.brezker.myapplication.ui.cita.CitaFragment"
-        android:label="@string/menu_cita"
+        android:label="menu_slideshow"
         tools:layout="@layout/fragment_cita" />
 
     <fragment
         android:id="@+id/nav_nuevo_paciente"
         android:name="com.brezker.myapplication.ui.home.NuevoPacienteFragment"
-        android:label="@string/nuevo_paciente"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_nuevo_paciente" />
 
     <fragment
         android:id="@+id/nav_nuevo_doctor"
         android:name="com.brezker.myapplication.ui.gallery.NuevoDoctorFragment"
-        android:label="@string/nuevo_doctor"
+        android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_nuevo_doctor" />
 
     <fragment
-        android:id="@+id/nav_nuevo_enfermedad"
-        android:name="com.brezker.myapplication.ui.slideshow.NuevoEnfermedadFragment"
-        android:label="@string/nuevo_enfermedad"
-        tools:layout="@layout/fragment_nuevo_enfermedad" />
+        android:id="@+id/nav_nueva_enfermedad"
+        android:name="com.brezker.myapplication.ui.slideshow.NuevaEnfermedadFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nueva_enfermedad" />
 
     <fragment
         android:id="@+id/nav_nuevo_cita"
         android:name="com.brezker.myapplication.ui.cita.NuevoCitaFragment"
-        android:label="@string/nuevo_cita"
+        android:label="cita"
         tools:layout="@layout/fragment_nuevo_cita" />
 </navigation>
