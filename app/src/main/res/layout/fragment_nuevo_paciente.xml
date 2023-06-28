@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.NuevoPacienteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="468dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="182dp"
+            android:layout_height="40dp"
+            android:text="Datos Paciente"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="32dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
