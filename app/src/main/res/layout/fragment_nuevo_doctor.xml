@@ -1,75 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.NuevoPacienteFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.gallery.NuevoDoctorFragment">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/edtTSangre"
-            android:layout_width="218dp"
-            android:layout_height="45dp"
+            android:id="@+id/edtEspecialidad"
+            android:layout_width="217dp"
+            android:layout_height="40dp"
             android:ems="10"
-            android:hint="Tipo de sangre"
+            android:hint="Especialidad"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.339" />
+            app:layout_constraintTop_toBottomOf="@+id/edtCedula"
+            app:layout_constraintVertical_bias="0.035" />
 
         <EditText
             android:id="@+id/edtNombre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.137"
             android:layout_width="214dp"
             android:layout_height="40dp"
             android:ems="10"
             android:hint="Nombre"
             android:inputType="text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.146" />
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="187dp" />
 
         <EditText
-            android:id="@+id/edtNss"
-            android:layout_width="214dp"
-            android:layout_height="50dp"
+            android:id="@+id/edtCedula"
+            android:layout_width="213dp"
+            android:layout_height="40dp"
             android:ems="10"
-            android:hint="NSS"
+            android:hint="Cedula"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.238" />
+            app:layout_constraintTop_toBottomOf="@+id/edtNombre"
+            app:layout_constraintVertical_bias="0.034" />
 
         <EditText
-            android:id="@+id/edtAlergias"
+            android:id="@+id/edtTurno"
             android:layout_width="211dp"
             android:layout_height="49dp"
             android:ems="10"
-            android:hint="Alergias"
+            android:hint="Turno"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintHorizontal_bias="0.478"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.435" />
+            app:layout_constraintVertical_bias="0.407" />
 
         <EditText
             android:id="@+id/edtTelefono"
-            android:layout_width="219dp"
-            android:layout_height="45dp"
+            android:layout_width="217dp"
+            android:layout_height="39dp"
             android:ems="10"
             android:hint="Telefono"
             android:inputType="text"
@@ -77,22 +80,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.453"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.531" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/edtDomicilio"
+            android:id="@+id/edtEmail"
             android:layout_width="211dp"
             android:layout_height="43dp"
             android:ems="10"
-            android:hint="Domicilio"
+            android:hint="Email"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.63" />
+            app:layout_constraintVertical_bias="0.578" />
 
         <Button
             android:id="@+id/btnGuardar"
@@ -119,5 +121,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.783" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
